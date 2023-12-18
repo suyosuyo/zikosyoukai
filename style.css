@@ -1,0 +1,519 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+p {
+    letter-spacing: 0.5;
+    line-height: 3;
+    color:rgb(122, 85, 79);
+    font-size: 16px;
+    font-family: "M PLUS Rounded 1c";
+    font-weight: bold;
+}
+
+section {
+    padding:3em 0;
+    border-bottom: 5px dashed rgb(186, 236, 255);
+}
+
+ul li a,
+.taitoru h2,
+footer a {
+    font-family: "Nico Moji";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+body {
+    /* 横の画像の指定 */
+    background-image: 
+    url(../images/右.png), 
+    url(../images/左yoko.png);
+    
+    background-position: 
+    right,
+    left;
+
+    background-repeat: repeat-y;
+
+    background-size: 324px;
+}
+
+ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+header li {
+    padding-left: 70px;
+    list-style: none;
+}
+
+.header {
+    background-color: rgb(186, 236, 255);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* nav動く時用 */
+
+/* .header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10000;
+}
+
+header {
+  margin-top: 170px;
+}
+
+.dekkai {
+  margin-top: 4em;
+} */
+/* これする時は空白の位置確認！ */
+
+
+
+.navsina{
+    height: 200px;
+    position: absolute;
+    top: -100px;
+    left: 100px;
+}
+
+header a {
+    font-family: 'MS UI Gothic',sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.mainoya {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em; 
+    height: 500px;
+}
+
+
+/* 自己紹介 */
+
+section {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.taitoru h2 {
+    font-size: 32px;
+    color: skyblue;
+}
+
+.taitoru img {
+    height: 100px;
+}
+
+.taitoru {
+    /* margin-bottom: 3em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zibun,
+.namae {
+    width: 45%;
+}
+
+.zikosyoukai {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nagai {
+    height: 400px;
+}
+
+.namae p {
+    font-size: 16px;
+    line-height: 3;
+    margin: 30px 0;
+}
+
+
+.ikkomeno {
+    padding-bottom: 3em;
+}
+
+/* 将来の夢 */
+
+
+/* 飛行機画像のみ */
+/* .hikouki img {
+    height: 300px;
+} */
+
+.syourainoyume {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.yume,
+.hikouki {
+    width: 45%;
+}
+
+.yume {
+    margin: 3em 0;
+}
+
+.hikouki {
+    animation: fuwafuwa 3s ease-in-out infinite alternate;
+    background: url(./img2/hikouki.png) no-repeat center center / 300px auto;
+    display: inline-block;
+    transition: 1.5s ease-in-out;
+    height: 300px;
+    margin-top: 15px;
+    position: absolute;
+    left: 500px;
+  }
+   
+  @keyframes fuwafuwa {
+    0% {
+      transform:translate(0, 0) rotate(-7deg);
+    }
+    50% {
+      transform:translate(0, -7px) rotate(0deg);
+    }
+    100% {
+      transform:translate(0, 0) rotate(7deg);
+    }
+  }
+
+/* 趣味 */
+
+.syumi img {
+    height: 400px;
+}
+
+.syumi {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jackson,
+.syumimozi {
+    width: 45%;
+}
+
+.syumimozi {
+    margin-top: 80px;
+    align-items: center;
+}
+
+/* 画像みっつ */
+
+.live {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+}
+
+.live img {
+    height: 250px;
+}
+
+/* .gazou:nth-child(2) {
+    margin: 0 20px;
+} */
+
+/* 画像拡大の時の */
+/* .gazou{
+    display:block;
+  }
+
+  .gazou img{
+    transition:0.3s;
+    display:block;
+    height: 250px;
+  }
+
+  .gazou:hover img{
+    opacity:0.8;
+  } */
+
+
+
+/* その他 */
+
+.itigyou,
+.nigyou {
+    display: flex;
+    justify-content: center;
+}
+
+.sonohoka img {
+    height: 250px;
+}
+
+.yottume {
+    margin-bottom: 3em;
+}
+
+.sonohoka {
+    margin-bottom: 100px;
+}
+
+/* ホバーの時の動き */
+
+.hoba img {
+    transform: scale(1);
+    transition: .3s ease-in-out;
+  }
+
+.hoba:hover img {
+    transform: scale(1.1);
+  }
+
+/* 一番下 */
+
+footer {
+    height: 100px;
+    background-color: rgb(186, 236, 255);
+    position: relative;
+}
+
+/* シナモンボタン画像のみ */
+/* footer img {
+    position: absolute;
+    height: 200px;
+    top: -160px;
+    right: 300px;
+}  */
+
+.yonkome {
+    border-bottom: 5px dashed white;
+}
+
+footer p {
+    color: white;
+    align-items: center;
+}
+
+.sikaku {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.modoru{
+    width:300px;
+    height: 200px;
+    position: absolute;
+    top: -160px;
+    right: 50px;
+    background:url(./img2/bottom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  
+.modoru:hover{
+    background:url(./img2/bottonmozi.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  
+
+/* jacksonキラキラ */
+
+.jackson {
+    position: relative;
+    /* display: inline-block; */
+    display: flex;
+}
+
+.suni {
+    position: absolute;
+    opacity: 1;
+    animation-name: ani1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1,end);
+}
+
+.suni2 {
+    position: absolute;
+    opacity: 0;
+    animation-name: ani2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1,end); 
+}
+
+@keyframes ani1 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes ani2 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ライン引く */
+
+
+.nabi {
+    /* display: inline-block; */
+    padding-bottom: 4px;
+    position: relative;
+
+
+    &::after {
+        background-color: white;
+        bottom: 0;
+        content: '';
+        /* display: block; */
+        height: 4px;
+        /* left: 0; */
+        position: absolute;
+        transition: .7s all;
+        width: 0;
+      }
+      
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+}
+}
+  
+  .nabi{ 
+    &::after {
+    left: 50%;
+    transform: translateX(-50%)
+  }
+}
+
+/* TOPスライドショー */
+
+.mainoya img {
+    width: inherit;
+    height: inherit;
+  }
+  
+  .mainoya {
+    white-space: nowrap;
+    height: 500px;
+    width: 888px;
+    /* height: 600px; */
+    overflow: hidden;
+    margin: 4em auto;
+  }
+  
+  .mainoya > :first-child {
+    animation-name: slide;
+    animation-duration: 30s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      margin-left: 400%;
+    }
+    25% {
+      margin-left: 200%;
+    }
+    50% {
+      margin-left: 0%;
+    }
+
+    75% {
+      margin-left: -200%;
+      }
+
+    100% {
+      margin-left: -400%;
+    }
+  }
+
+
+  /* 画像説明 */
+
+.hover {
+    position: relative;
+}
+
+  .hover .hover-text {
+    position:    absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color:    rgba(255, 255, 255, 0.65);
+    /*透明にして表示させない*/
+    opacity: 0;
+    /*ホバーの動き方*/
+    transition: .3s ease-in-out;
+  }
+  .hover .hover-text {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hover:hover .hover-text {
+    /*不透明にして表示*/
+    opacity: 1;
+  }
+
+  .hover:nth-child(2) {
+    margin: 0 20px;
+}
+
+.hover .hover-img {
+    margin: 0;
+    padding: 0;
+  }
+  .hover-img img {
+    width: 100%;
+    height: 100%;
+  }
